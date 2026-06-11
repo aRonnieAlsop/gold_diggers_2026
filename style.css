@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: #080808;
@@ -334,5 +339,72 @@ footer img {
 
   .street-dance h2 {
     font-size: 100px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+  .hero,
+  .section-line,
+  footer {
+    padding: 30px 20px;
+  }
+
+  .top-label h1 {
+    font-size: 48px;
+  }
+
+  .parade-title {
+    font-size: 82px;
+    line-height: .9;
+  }
+
+  .join h2,
+  .activities h2,
+  .vendor-info h2 {
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  .street-dance h2 {
+    font-size: 82px;
+    line-height: .9;
+    white-space: normal;
+  }
+
+  .month {
+    font-size: 52px;
+  }
+
+  .day {
+    font-size: 120px;
+  }
+
+  .ampm,
+  .pm {
+    font-size: 90px;
+  }
+
+  .intro,
+  .join p,
+  .vendors p,
+  .dance-copy {
+    font-size: 18px;
+  }
+
+  .schedule div {
+    grid-template-columns: 95px 1fr;
+    font-size: 18px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
