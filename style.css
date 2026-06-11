@@ -246,7 +246,7 @@ footer img {
 }
 
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .hero,
   .section-line,
   footer {
