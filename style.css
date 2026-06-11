@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: white;
+  font-family: "Oswald", Arial, sans-serif;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #080808;
+}
+
+.hero,
+.section-line,
+footer {
+  padding: 55px 70px;
+  border-bottom: 1px solid rgba(255,255,255,.45);
+}
+
+.top-label span,
+.top-label h1,
+.parade-title,
+.date-block,
+.join h2,
+.vendors h2,
+.activities h2,
+.street-dance h2,
+.button {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+.top-label span {
+  font-size: 22px;
+  letter-spacing: .06em;
+}
+
+.top-label h1 {
+  font-size: 64px;
+  line-height: .85;
+  margin: 0 0 25px;
+}
+
+.parade-title {
+  font-size: 150px;
+  line-height: .85;
+  margin: 0;
+  position: absolute;
+  right: 70px;
+  top: 85px;
+  z-index: 2;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 78%;
+  margin-left: 55px;
+  display: block;
+  filter: none;
+}
+
+.hero-bottom {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 45px;
+  margin-top: 25px;
+}
+
+.date-block {
+  line-height: .85;
+}
+
+.month {
+  display: block;
+  font-size: 68px;
+  transform: skewX(-8deg);
+}
+
+.day {
+  display: block;
+  font-size: 170px;
+}
+
+.line {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: white;
+  margin: 12px 0 48px;
+}
+
+.ampm,
+.pm {
+  display: block;
+  font-size: 125px;
+}
+
+.intro,
+.join p,
+.vendors p,
+.dance-copy {
+  font-size: 21px;
+  line-height: 1.32;
+}
+
+.intro p {
+  margin: 0 0 14px;
+}
+
+.schedule {
+  margin-top: 25px;
+}
+
+.schedule div {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  border-bottom: 2px solid rgba(255,255,255,.45);
+  padding: 9px 0;
+}
+
+.schedule strong {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+}
+
+.join {
+  display: grid;
+  grid-template-columns: 1fr .65fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.join img,
+.vendors img,
+.activities img,
+.dance-main img,
+.band,
+footer img {
+  max-width: 100%;
+  display: block;
+}
+
+.join h2,
+.vendors h2,
+.activities h2 {
+  font-size: 78px;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  background: #ffb51b;
+  color: #050505;
+  text-decoration: none;
+  font-size: 21px;
+  padding: 15px 26px 13px;
+  margin-top: 22px;
+}
+
+.vendors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 95px;
+  align-items: center;
+}
+
+.vendors img {
+  margin-bottom: 25px;
+}
+
+.vendor-info h2 {
+  font-size: 110px;
+  margin-bottom: 25px;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.activities h2 {
+  font-size: 82px;
+  line-height: 1.18;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 310px;
+  background: rgba(255,255,255,.45);
+}
+
+.street-dance h2 {
+  font-size: 175px;
+  line-height: .85;
+  margin: 0 0 45px;
+}
+
+.dance-main {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 45px;
+  align-items: start;
+}
+
+.dance-main img {
+  filter: none;
+}
+
+.dance-copy {
+  max-width: 650px;
+  margin: 40px auto 0;
+}
+
+.dance-copy span {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.band {
+  width: 205px;
+  margin: 25px auto 0;
+  border: 1px solid rgba(255,255,255,.45);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 80px 70px;
+}
+
+footer img {
+  width: 320px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .hero,
+  .section-line,
+  footer {
+    padding: 42px 28px;
+  }
+
+  .parade-title {
+    position: static;
+    font-size: 110px;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero-bottom,
+  .join,
+  .vendors,
+  .activities,
+  .dance-main {
+    grid-template-columns: 1fr;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .date-block {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .ampm,
+  .pm {
+    border-left: 2px solid rgba(255,255,255,.45);
+    padding-left: 20px;
+  }
+
+  .street-dance h2 {
+    font-size: 100px;
+  }
+}
