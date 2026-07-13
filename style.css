@@ -314,6 +314,20 @@ footer img {
 .history-button {
   margin-top: 14px;
 }
+.activities img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  justify-self: center;
+}
+
+@media (max-width: 600px) {
+  .activities img {
+    width: 92%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
 /* Responsive */
 @media (max-width: 900px) {
   .hero,
