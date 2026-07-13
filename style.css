@@ -487,3 +487,10 @@ footer img {
     height: auto;
   }
 }
+
+/* End the Gold Diggers page directly after the footer logo */
+footer {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: 0;
+}
