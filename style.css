@@ -321,6 +321,626 @@ footer img {
   justify-self: center;
 }
 
+/* =========================================================
+   2026 PARADE THEME
+   ========================================================= */
+
+.parade-theme{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+/* ---------- IMAGE ---------- */
+
+.parade-theme-image{
+    grid-column:1 / -1;
+    position:relative;
+}
+
+.parade-theme-image img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:540px;
+    object-fit:contain;
+}
+
+.parade-theme-year{
+    position:absolute;
+    right:-18px;
+    bottom:-24px;
+
+    font-family:"Bebas Neue",sans-serif;
+    font-size:88px;
+    line-height:.8;
+
+    color:#76ff2b;
+}
+
+/* ---------- COPY ---------- */
+
+.parade-theme-copy{
+    min-width:0;
+}
+
+.parade-theme-label{
+    display:block;
+
+    margin-bottom:14px;
+
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+
+    color:#ffb51b;
+}
+
+.parade-theme-copy h2{
+    margin:0 0 28px;
+
+    font-family:"Bebas Neue",sans-serif;
+    font-size:88px;
+    line-height:.84;
+    font-weight:400;
+    text-transform:uppercase;
+}
+
+.parade-theme-copy h2 span,
+.parade-theme-copy h2 strong{
+    display:block;
+}
+
+.parade-theme-copy h2 strong{
+    color:#76ff2b;
+    font-weight:400;
+
+    text-shadow:
+        0 0 8px rgba(118,255,43,.15),
+        0 0 20px rgba(118,255,43,.08);
+}
+
+.parade-theme-intro{
+    font-size:20px;
+    line-height:1.45;
+}
+
+.grand-marshal{
+    margin-top:34px;
+    padding-top:28px;
+
+    border-top:1px solid rgba(255,255,255,.45);
+}
+
+.grand-marshal-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+
+    color:#76ff2b;
+}
+
+.grand-marshal h3{
+
+    margin:0;
+
+    font-family:"Bebas Neue",sans-serif;
+    font-size:50px;
+    line-height:.9;
+    font-weight:400;
+    text-transform:uppercase;
+}
+
+.grand-marshal-role{
+
+    margin:4px 0 18px;
+
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+    text-transform:uppercase;
+
+    color:#ffb51b;
+}
+
+.grand-marshal p:last-child{
+
+    margin:0;
+
+    font-size:19px;
+    line-height:1.45;
+}
+
+/* ---------- PRIZES ---------- */
+
+.parade-prizes{
+    min-width:0;
+}
+
+.prize-heading span{
+
+    display:block;
+
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+
+    color:#76ff2b;
+}
+
+.prize-heading h3{
+
+    margin:4px 0 24px;
+
+    font-family:"Bebas Neue",sans-serif;
+    font-size:70px;
+    line-height:.85;
+    font-weight:400;
+}
+
+.prize-list{
+    border-top:2px solid rgba(255,255,255,.55);
+    margin-bottom:24px;
+}
+
+.prize-row{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.35);
+}
+
+.prize-place{
+
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+    text-transform:uppercase;
+}
+
+.prize-row strong{
+
+    font-family:"Bebas Neue",sans-serif;
+    font-size:42px;
+    font-weight:400;
+
+    color:#ffb51b;
+}
+
+.parade-prizes p{
+
+    margin:0 0 18px;
+
+    font-size:18px;
+    line-height:1.45;
+}
+
+.parade-prizes em{
+    font-style:normal;
+    color:#76ff2b;
+}
+
+.ribbon-copy{
+    margin-top:16px;
+}
+
+/* =========================================================
+   MAIN STREET MARKET
+   ========================================================= */
+
+.marketplace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: 64px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   SHARED MARKETPLACE TYPOGRAPHY
+   ========================================================= */
+
+.marketplace-label,
+.retail-copy-label {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #ffb51b;
+}
+
+.marketplace-heading h2 {
+  margin: 0 0 34px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: .82;
+  text-transform: uppercase;
+}
+
+.marketplace-heading h2 span,
+.marketplace-heading h2 strong {
+  display: block;
+}
+
+.marketplace-heading h2 strong {
+  font-weight: 400;
+  color: #ffb51b;
+}
+
+
+/* =========================================================
+   FOOD SIDE
+   ========================================================= */
+
+.marketplace-food {
+  min-width: 0;
+}
+
+.marketplace-food-image {
+  position: relative;
+  min-width: 0;
+}
+
+.marketplace-food-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.marketplace-image-word {
+  position: absolute;
+  right: -10px;
+  bottom: -30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 104px;
+  font-weight: 400;
+  line-height: .8;
+  text-transform: uppercase;
+  color: #ffb51b;
+  pointer-events: none;
+}
+
+.marketplace-food-copy {
+  max-width: 540px;
+  margin-top: 54px;
+}
+
+.marketplace-food-copy h3,
+.marketplace-retail-copy h3 {
+  margin: 0 0 14px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: .92;
+  text-transform: uppercase;
+}
+
+.marketplace-food-copy p,
+.marketplace-retail-copy p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   RETAIL SIDE
+   ========================================================= */
+
+.marketplace-retail {
+  min-width: 0;
+  padding-top: 32px;
+}
+
+.retail-collage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  grid-template-rows: auto auto auto;
+  gap: 12px;
+  min-width: 0;
+}
+
+.retail-image {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #141414;
+}
+
+.retail-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .35s ease;
+}
+
+.retail-image:hover img {
+  transform: scale(1.025);
+}
+
+.retail-image-large {
+  grid-row: 1 / span 2;
+}
+
+.retail-image-large img {
+  min-height: 400px;
+}
+
+.retail-image-wide {
+  grid-column: 1 / -1;
+}
+
+.retail-image-wide img {
+  min-height: 210px;
+  max-height: 270px;
+}
+
+.retail-collage-word {
+  position: absolute;
+  left: -12px;
+  bottom: -31px;
+  z-index: 2;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: .8;
+  text-transform: uppercase;
+  color: white;
+  pointer-events: none;
+}
+
+.marketplace-retail-copy {
+  margin-top: 62px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,.45);
+}
+
+.marketplace-retail-copy h3 {
+  font-size: 58px;
+}
+
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .marketplace {
+    grid-template-columns: 1fr;
+    gap: 68px;
+  }
+
+  .marketplace-heading h2 {
+    font-size: 82px;
+  }
+
+  .marketplace-food-image img {
+    max-height: none;
+  }
+
+  .marketplace-image-word {
+    right: 8px;
+    bottom: -24px;
+    font-size: 88px;
+  }
+
+  .marketplace-food-copy {
+    margin-top: 48px;
+  }
+
+  .marketplace-retail {
+    padding-top: 0;
+  }
+
+  .retail-collage {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .retail-image-large img {
+    min-height: 440px;
+  }
+
+  .retail-collage-word {
+    left: 8px;
+    font-size: 86px;
+  }
+}
+
+
+/* =========================================================
+   PHONES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .marketplace {
+    gap: 58px;
+  }
+
+  .marketplace-label,
+  .retail-copy-label {
+    font-size: 11px;
+    letter-spacing: .11em;
+  }
+
+  .marketplace-heading h2 {
+    margin-bottom: 26px;
+    font-size: clamp(66px, 20vw, 82px);
+  }
+
+  .marketplace-food-image img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .marketplace-image-word {
+    right: 6px;
+    bottom: -17px;
+    font-size: 66px;
+  }
+
+  .marketplace-food-copy {
+    margin-top: 39px;
+  }
+
+  .marketplace-food-copy h3,
+  .marketplace-retail-copy h3 {
+    font-size: 46px;
+  }
+
+  .marketplace-food-copy p,
+  .marketplace-retail-copy p {
+    font-size: 18px;
+  }
+
+  .retail-collage {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .retail-image img {
+    min-height: 145px;
+  }
+
+  .retail-image-large {
+    grid-row: auto;
+  }
+
+  .retail-image-large img {
+    min-height: 145px;
+  }
+
+  .retail-image-wide {
+    grid-column: 1 / -1;
+  }
+
+  .retail-image-wide img {
+    min-height: 180px;
+    max-height: none;
+  }
+
+  .retail-collage-word {
+    left: 5px;
+    bottom: -19px;
+    font-size: 66px;
+  }
+
+  .marketplace-retail-copy {
+    margin-top: 48px;
+    padding-top: 25px;
+  }
+}
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width:900px){
+
+    .parade-theme{
+
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .parade-theme-image,
+    .parade-theme-copy,
+    .parade-prizes{
+
+        grid-column:1;
+    }
+
+    .parade-theme-copy h2{
+        font-size:82px;
+    }
+
+    .parade-theme-year{
+
+        right:10px;
+        bottom:-18px;
+
+        font-size:72px;
+    }
+}
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width:600px){
+
+    .parade-theme{
+
+        gap:34px;
+    }
+
+    .parade-theme-image img{
+
+        width:100%;
+        height:auto;
+        object-fit:contain;
+    }
+
+    .parade-theme-year{
+
+        font-size:58px;
+        right:8px;
+        bottom:-16px;
+    }
+
+    .parade-theme-copy h2{
+
+        font-size:70px;
+    }
+
+    .parade-theme-intro,
+    .grand-marshal p:last-child,
+    .parade-prizes p{
+
+        font-size:18px;
+    }
+
+    .grand-marshal h3{
+
+        font-size:44px;
+    }
+
+    .prize-heading h3{
+
+        font-size:62px;
+    }
+
+    .prize-row strong{
+
+        font-size:38px;
+    }
+}
+
 @media (max-width: 600px) {
   .activities img {
     width: 92%;
