@@ -721,7 +721,134 @@ footer img {
 .marketplace-retail-copy h3 {
   font-size: 58px;
 }
+/* =========================================================
+   STREET DANCE PERFORMERS
+   ========================================================= */
 
+.dance-copy {
+  max-width: 650px;
+  margin: 40px auto 0;
+}
+
+.dance-copy p {
+  margin: 0;
+}
+
+.dance-copy span {
+  font-family: "IBM Plex Mono", monospace;
+  color: #ffb51b;
+  text-transform: uppercase;
+}
+
+.dance-performers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.performer {
+  min-width: 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.45);
+}
+
+.performer-label {
+  display: block;
+  margin-bottom: 13px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #ffb51b;
+}
+
+.performer img {
+  display: block;
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(255,255,255,.35);
+}
+
+.performer-band img {
+  object-position: center;
+}
+
+.performer-fire img {
+  object-position: center;
+}
+
+.performer h3 {
+  margin: 20px 0 7px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: .92;
+  text-transform: uppercase;
+}
+
+.performer p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   STREET DANCE PERFORMERS — TABLETS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .dance-performers {
+    gap: 22px;
+  }
+
+  .performer img {
+    height: 280px;
+  }
+
+  .performer h3 {
+    font-size: 43px;
+  }
+}
+
+
+/* =========================================================
+   STREET DANCE PERFORMERS — PHONES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .dance-copy {
+    margin-top: 30px;
+  }
+
+  .dance-performers {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    margin-top: 38px;
+  }
+
+  .performer img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .performer h3 {
+    font-size: 45px;
+  }
+
+  .performer p {
+    font-size: 17px;
+  }
+}
 
 /* =========================================================
    TABLETS
