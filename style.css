@@ -1241,3 +1241,132 @@ footer {
   margin-bottom: 0 !important;
   border-bottom: 0;
 }
+
+/* =========================================================
+   FINAL MOBILE FIX — HISTORY FEATURE
+   Keep this at the absolute bottom of the stylesheet
+   ========================================================= */
+
+.history-feature,
+.history-image-wrap,
+.history-copy {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.history-title span {
+  display: block;
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 900px) {
+
+  .history-feature {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 48px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .history-image-wrap,
+  .history-copy {
+    grid-column: 1 !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .history-copy {
+    overflow: visible;
+  }
+
+  .history-copy h2,
+  .history-copy .history-title {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 28px;
+    font-size: clamp(58px, 12vw, 82px);
+    line-height: .88;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+  .history-feature {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .history-image-wrap {
+    position: relative;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 46px;
+  }
+
+  .history-image-wrap img {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  .history-copy {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+
+  .history-copy h2,
+  .history-copy .history-title {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 24px;
+
+    font-size: clamp(48px, 14vw, 64px) !important;
+    line-height: .88 !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .history-title span {
+    display: block;
+    width: 100%;
+  }
+
+  .history-copy p {
+    font-size: 18px;
+    line-height: 1.42;
+  }
+
+  .history-label {
+    font-size: 11px;
+    letter-spacing: .1em;
+  }
+
+  .history-date {
+    right: 6px;
+    bottom: -16px;
+    font-size: 56px;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width: 380px) {
+
+  .history-copy h2,
+  .history-copy .history-title {
+    font-size: 45px !important;
+  }
+}
