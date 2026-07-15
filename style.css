@@ -1419,9 +1419,41 @@ footer {
   }
 }
 
-.share-icon {
-  text-align: center;
-  font-size: 28px;
-  color: rgba(255,255,255,.55);
-  margin-top: 30px;
+/* Small editorial share button */
+.share-icon-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 34px 20px 10px;
+}
+
+.share-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(255,255,255,.72);
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.share-icon-button:hover {
+  color: #ffb51b;
+  border-color: #ffb51b;
+  transform: translateY(-2px);
+}
+
+.share-icon-button:focus-visible {
+  outline: 2px solid #ffb51b;
+  outline-offset: 4px;
 }

@@ -418,9 +418,44 @@ Explore the photographs, memories, and historical research that point to a longe
     <footer>
       <img src="chamber_logo_white.png" alt="Indian Valley Chamber of Commerce">
     </footer>
-<div class="share-icon">
-  ↗
+<div class="share-icon-wrap">
+  <button
+    class="share-icon-button"
+    type="button"
+    aria-label="Share Gold Diggers Days"
+    onclick="shareGoldDiggers()"
+  >
+    ↗
+  </button>
 </div>
+
+<script>
+  async function shareGoldDiggers() {
+    const shareData = {
+      title: "Gold Diggers Days 2026",
+      text: "Celebrate Gold Diggers Days in Greenville on July 18, 2026.",
+      url: "https://indianvalleychamber.org/gold-diggers-2026/"
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(shareData.url);
+        alert("Gold Diggers page link copied.");
+      }
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        window.open(
+          "https://www.facebook.com/sharer/sharer.php?u=" +
+          encodeURIComponent(shareData.url),
+          "_blank",
+          "noopener,noreferrer"
+        );
+      }
+    }
+  }
+</script>
   </main>
 </body>
 </html>
